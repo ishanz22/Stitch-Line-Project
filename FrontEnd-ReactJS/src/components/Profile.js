@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Typography, Card, CardContent, Paper, Grid } from '@material-ui/core';
-
+import ManageForm from "../components/ManageForm"
 import AuthService from "../services/auth.service";
-
+import {Button} from "@material-ui/core";
 const style = {
   root: {
     minWidth: 275,
@@ -74,6 +74,8 @@ export default class Profile extends Component {
                         </ul>
                       </Paper>
                     </Grid>
+                    <br></br>
+                    <Button href="./ManageForm">Click me</Button>
                   </Grid>
                 </CardContent>
               </Card>

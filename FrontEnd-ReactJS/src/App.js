@@ -15,6 +15,7 @@ import BoardModerator from "./components/BoardModerator";
 import BoardAdmin from "./components/BoardAdmin";
 import { AccountCircle } from "@material-ui/icons";
 import Footer from "./components/Footer";
+import ManageForm from "./components/ManageForm";
 
 
 const style = {
@@ -80,6 +81,9 @@ class App extends Component {
                 <Button href="/home" color='inherit'>
                   <strong>Home</strong>
                 </Button>
+                
+              
+                
                 {showModeratorBoard && (
                   <Button href="/mod" color='inherit'>
                     <strong>Moderator Board</strong>
@@ -123,7 +127,7 @@ class App extends Component {
 
           <div>
             <Switch>
-              <Route exact path={["/", "/home"]} component={Home} />
+              
               <Route exact path="/login" component={Login} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/profile" component={Profile} />

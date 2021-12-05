@@ -8,7 +8,7 @@ const style = {
     minWidth: 275,
     backgroundColor:'#006064',
     marginTop: 20,
-    height: 400,
+    height: 470,
     color: '#e0f7fa'
   },
   title: {
@@ -42,7 +42,7 @@ export default class Profile extends Component {
               <Card style={style.root} variant="outlined">
                 <CardContent>
                   <Typography style={style.title} gutterBottom>
-                    <h1>Profile : {currentUser.username}</h1>
+                    <h3>Profile : {currentUser.username}</h3>
                   </Typography>
                 </CardContent>
                 <CardContent>
@@ -75,7 +75,7 @@ export default class Profile extends Component {
                       </Paper>
                     </Grid>
                     <br></br>
-                    <Button href="./ManageForm">Click me</Button>
+                    <Button href="./Container">Click me</Button>
                   </Grid>
                 </CardContent>
               </Card>

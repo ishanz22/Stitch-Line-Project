@@ -16,6 +16,7 @@ import BoardAdmin from "./components/BoardAdmin";
 import { AccountCircle } from "@material-ui/icons";
 import Footer from "./components/Footer";
 
+
 const style = {
   paper: {
     flexGrow: 1,

@@ -97,7 +97,7 @@ class App extends Component {
                 )}
                 {currentUser && (
                   <Button href="/user" color='inherit'>
-                    <strong>User</strong>
+                    <strong>User Manage</strong>
                   </Button>
                 )}
               </Paper>

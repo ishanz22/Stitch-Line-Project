@@ -6,14 +6,18 @@ import { Card, CardContent, CardActionArea, Grid, FormControl, Typography } from
 import { Face } from '@material-ui/icons';
 
 import AuthService from "../services/auth.service";
+import { color } from "@material-ui/system";
 
 const style = {
   root: {
     minWidth: 275,
     backgroundColor:'#006064',
     marginTop: 20,
-    color: '#e0f7fa'
+    color: '#f5f5f5',
+    
   },
+
+
 }
 
 export default class Register extends Component {
@@ -107,13 +111,15 @@ export default class Register extends Component {
                       
                       <Grid item xs={12}>
                         <FormControl>
-                          <label htmlFor="username">Username</label>
-                          <Input type="text" name="username" value={this.state.username}
+                          <label  htmlFor="username">Username</label>
+                          <Input  type="text" name="username"  value={this.state.username}
                             onChange={this.onChangeUsername}/>
                         </FormControl>
+                        
                       </Grid>
                       <Grid item xs={12}>
                         <FormControl>
+                        
                           <label htmlFor="email">Email</label>
                           <Input type="text" name="email" value={this.state.email}
                             onChange={this.onChangeEmail}/>
@@ -122,22 +128,27 @@ export default class Register extends Component {
 
                       <Grid item xs={12}>
                         <FormControl>
+                        
                           <label htmlFor="mobile">Mobile Number</label>
-                          <Input type="text" name="mobile" value={this.state.mobile}
+                          <Input type="text" name="mobile"  value={this.state.mobile}
                             onChange={this.onChangeMobile}/>
                         </FormControl>
+
+                    
+
                       </Grid>
 
                       <Grid item xs={12}>
                         <FormControl>
+                        
                           <label htmlFor="password">Password</label>
-                          <Input type="password" name="password" value={this.state.password}
+                          <Input type="password" name="password"  value={this.state.password}
                             onChange={this.onChangePassword}/>
                         </FormControl>
                       </Grid>
                       <Grid item xs={12}>
                         <FormControl>
-                          <button>Sign Up</button>
+                          <button >Sign Up</button>
                         </FormControl>
                       </Grid>
                   </Grid>

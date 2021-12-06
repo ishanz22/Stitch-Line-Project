@@ -101,9 +101,10 @@ export default class Login extends Component {
                         <FormControl marginTop='20'>
                           <button disabled={this.state.loading}>
                             {this.state.loading && (
-                              <CircularProgress size='10'/>
+                              <CircularProgress size='10' />
                             )}
-                            <span>Login</span>
+
+                            <span >Login</span>
                           </button>
                         </FormControl>
                       </Grid>
